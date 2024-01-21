@@ -12,6 +12,7 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.9.5",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/adapter-netlify": "^4.1.0",
     "@sveltejs/kit": "^2.0.0",
