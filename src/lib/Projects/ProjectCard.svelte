@@ -11,11 +11,11 @@
 >
 	<img
 		src={project.image}
-		class="max-h-[12rem] w-full self-center justify-self-center rounded-lg border-4 border-black object-cover dark:border-white sm:max-h-max lg:col-span-2"
+		class=" max-h-[12rem] w-full self-center justify-self-center rounded-lg border-4 border-black object-cover dark:border-white sm:max-h-max lg:col-span-2"
 		alt={project.name}
 	/>
 	<div
-		class="col-span-2 m-4 flex flex-col gap-4 rounded-lg bg-white transition-all duration-200 hover:bg-gray-100 dark:bg-gray-950 dark:hover:bg-gray-900 sm:p-4 lg:col-span-3 lg:gap-6"
+		class=" col-span-3 m-4 flex flex-col gap-4 rounded-lg bg-white transition-all duration-200 hover:bg-gray-100 dark:bg-gray-950 dark:hover:bg-gray-900 sm:p-4 lg:gap-6"
 	>
 		<div class="flex items-center justify-between gap-4">
 			<h3 class="text-2xl font-bold lg:text-4xl">{capitalize(project.name)}</h3>

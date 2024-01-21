@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import PostCard from './PostCard.svelte';
+	import type { DevPost } from '$lib/types';
 
 	const getPosts = async () => {
 		const res = await fetch('https://dev.to/api/articles?username=zevro');
@@ -7,7 +9,10 @@
 		return data;
 	};
 
-	const posts = getPosts();
+	let posts: DevPost[] = [];
+	onMount(async () => {
+		posts = await getPosts();
+	});
 </script>
 
 <section id="blog" class="flex flex-col items-center px-6">
