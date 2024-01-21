@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Geist';
+		src: url('/fonts/GeistVariableVF.ttf') format('truetype');
+	}
+
+	html,
+	body {
+		font-family: 'Geist', sans-serif !important;
+		min-height: 100%;
+	}
+
+	html {
+		scroll-behavior: smooth;
+		/* scroll-snap-type: y proximity;
+		scroll-snap-stop: normal; */
+	}
+
+	:root {
+		--dot-color: #bcc0c6;
+	}
+	.dark {
+		--dot-color: #3a3a4e;
+		background-color: rgb(3 7 18);
+	}
+
+	section {
+		scroll-snap-align: start;
+		padding: 5rem 0;
+	}
+}
