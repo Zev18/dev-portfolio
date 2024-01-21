@@ -1,6 +1,11 @@
 import { Github, Twitter, Linkedin, type Icon } from 'lucide-svelte';
 import type { ComponentType } from 'svelte';
 
+import fontrando from '$lib/assets/images/projects/font-randomizer.webp';
+import gptstatus from '$lib/assets/images/projects/GPTStatus.webp';
+import artsite from '$lib/assets/images/projects/Zevsart.webp';
+import shsh from '$lib/assets/images/projects/shalshelet-shivyoni.webp';
+
 export type tech =
 	| 'react'
 	| 'ruby on rails'
@@ -58,7 +63,6 @@ export type project = {
 	githubLink?: string;
 	liveLink?: string;
 	stack: tech[];
-	slug: string;
 	image: string;
 };
 
@@ -71,8 +75,7 @@ export const projects: project[] = [
 		githubLink: 'https://github.com/Zev18/art-site',
 		liveLink: 'https://zevsart.com',
 		stack: ['nextjs', 'javascript', 'swiperJS', 'HTML/CSS'],
-		slug: 'art-site',
-		image: '/src/lib/assets/images/projects/Zevsart.webp'
+		image: artsite
 	},
 	{
 		name: 'GPTStatus',
@@ -82,8 +85,7 @@ export const projects: project[] = [
 		githubLink: 'https://github.com/Zev18/gptstatus',
 		liveLink: 'https://chromewebstore.google.com/detail/gptstatus/hchmelcdpkbbpjmibgolkegfpnamngog',
 		stack: ['javascript', 'HTML/CSS'],
-		slug: 'gptstatus',
-		image: '/src/lib/assets/images/projects/GPTStatus.webp'
+		image: gptstatus
 	},
 	{
 		name: 'font randomizer',
@@ -93,8 +95,7 @@ export const projects: project[] = [
 		githubLink: 'https://github.com/Zev18/font-randomizer',
 		liveLink: 'https://marketplace.visualstudio.com/items?itemName=zevross.font-randomizer',
 		stack: ['typescript'],
-		slug: 'font-randomizer',
-		image: '/src/lib/assets/images/projects/font-randomizer.webp'
+		image: fontrando
 	},
 	// {
 	// 	name: 'lightning',
@@ -105,7 +106,7 @@ export const projects: project[] = [
 	// 	liveLink: 'https://marketplace.visualstudio.com/items?itemName=zevross.lightning',
 	// 	slug: 'lightning',
 	// 	stack: ['typescript'],
-	// 	image: '/src/lib/assets/images/projects/lightning.webp'
+	// 	image: lightning
 	// },
 	{
 		name: 'shalshelet shivyoni',
@@ -114,8 +115,7 @@ export const projects: project[] = [
 			'A website created for an organization I volunteered at. Modeled after a GoDaddy template, this fully responsive site was coded from scratch in GatsbyJS.',
 		liveLink: 'https://shalsheletshivyoni.org/',
 		stack: ['gatsbyJS', 'javascript', 'HTML/CSS'],
-		image: '/src/lib/assets/images/projects/shalshelet-shivyoni.webp',
-		slug: 'shalshelet-shivyoni'
+		image: shsh
 	}
 ];
 

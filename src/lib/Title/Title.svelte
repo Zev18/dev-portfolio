@@ -12,12 +12,21 @@
 	gsap.registerPlugin(TextPlugin);
 	onMount(() => {
 		const splitText = new SplitType('#title');
-		gsap.from('.char', {
-			opacity: 0,
-			y: 20,
-			rotateX: -20,
-			stagger: 0.05
-		});
+		gsap.fromTo(
+			'.char',
+			{
+				opacity: 0,
+				y: 20,
+				rotateX: -20,
+				stagger: 0.05
+			},
+			{
+				opacity: 1,
+				y: 0,
+				rotateX: 0,
+				stagger: 0.05
+			}
+		);
 	});
 </script>
 
@@ -27,8 +36,7 @@
 			<div>
 				<h1
 					class={cn(
-						'text-[7rem] font-bold leading-[1] lg:mt-[20%] xl:text-[10rem]',
-						browser ? '' : 'opacity-0'
+						'text-[7rem] font-bold leading-[1] text-black opacity-100 dark:text-white lg:mt-[20%] xl:text-[10rem]'
 					)}
 					id="title"
 				>
