@@ -2,6 +2,7 @@
 node_modules
 /build
 /functions
+/.netlify
 /.svelte-kit
 /package
 .env
