@@ -20,8 +20,8 @@
 				<p class="max-w-prose px-2 lg:text-lg">
 					I'm a developer from the California bay area with professional experience in both frontend
 					and backend development, using technologies such as NextJS, Ruby on Rails, Go, and more.
-					When I'm not working on side projects, I enjoy drawing, skiing, studying foreign
-					languages, and watching anime.
+					When I'm not working on side projects, I enjoy drawing, skiing, and studying foreign
+					languages.
 				</p>
 			</div>
 		</div>
