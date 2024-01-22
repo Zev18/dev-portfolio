@@ -36,7 +36,7 @@
 			<div>
 				<h1
 					class={cn(
-						'text-[7rem] font-bold leading-[1] text-black opacity-100 dark:text-white lg:mt-[20%] xl:text-[10rem]'
+						'text-[7rem] font-bold leading-[1] text-black opacity-0 opacity-100 dark:text-white lg:mt-[20%] xl:text-[10rem]'
 					)}
 					id="title"
 				>
