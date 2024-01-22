@@ -51,7 +51,7 @@ export const socials: social[] = [
 	},
 	{
 		name: 'LinkedIn',
-		link: 'https://www.linkedin.com/in/zev-ross-baab31209/',
+		link: 'https://www.linkedin.com/in/zevross/',
 		icon: Linkedin
 	}
 ];
