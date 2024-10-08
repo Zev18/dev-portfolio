@@ -132,7 +132,17 @@ export type work = {
 export const work: work[] = [
 	{
 		company: 'PrescientAI',
-		companyLink: 'https://prescient-ai.io',
+		companyLink: 'https://prescientai.com',
+		role: 'Full-Stack Developer',
+		location: 'Miami, FL',
+		year: '2024-Present',
+		stack: ['react', 'typescript', 'ruby on rails', 'postgresql'],
+		summary:
+			'Accepted a return offer to come back to PrescientAI, where I am now a core member of the platform engineering team.'
+	},
+	{
+		company: 'PrescientAI',
+		companyLink: 'https://prescientai.com',
 		role: 'Full-Stack Intern',
 		location: 'Miami, FL',
 		year: '2023',
