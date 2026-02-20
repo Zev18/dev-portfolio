@@ -23,7 +23,8 @@ export type tech =
 	| 'swiperJS'
 	| 'postgresql'
 	| 'node'
-	| 'java';
+	| 'java'
+	| 'graphql';
 
 type social = {
 	name: string;
@@ -136,7 +137,7 @@ export const work: work[] = [
 		role: 'Full-Stack Developer',
 		location: 'Miami, FL',
 		year: '2024-Present',
-		stack: ['react', 'typescript', 'ruby on rails', 'postgresql'],
+		stack: ['react', 'typescript', 'ruby on rails', 'postgresql', 'graphql'],
 		summary:
 			'Accepted a return offer to come back to PrescientAI, where I am now a core member of the platform engineering team.'
 	},
