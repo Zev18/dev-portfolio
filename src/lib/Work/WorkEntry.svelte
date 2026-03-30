@@ -19,7 +19,7 @@
 			</div>
 			<p class="mt-2 text-gray-800 dark:text-gray-200 lg:text-lg">{work.summary}</p>
 			<div class="my-2 flex flex-wrap gap-2 lg:gap-4">
-				{#each work.stack as tech}
+				{#each work.stack! as tech}
 					<Chip main>{capitalize(tech)}</Chip>
 				{/each}
 			</div>
