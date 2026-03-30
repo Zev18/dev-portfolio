@@ -37,7 +37,9 @@
   },
   "type": "module",
   "dependencies": {
+    "baseline-browser-mapping": "^2.10.12",
     "bits-ui": "^0.14.0",
+    "caniuse-lite": "^1.0.30001782",
     "clsx": "^2.1.1",
     "gsap": "^3.12.5",
     "lucide-svelte": "^0.309.0",

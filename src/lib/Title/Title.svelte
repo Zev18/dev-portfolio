@@ -1,7 +1,6 @@
 <script>
-	import { browser } from '$app/environment';
-	import { gsap } from 'gsap';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
+	import gsap from 'gsap';
+	import TextPlugin from 'gsap/dist/TextPlugin';
 	import SplitType from 'split-type';
 	import { onMount } from 'svelte';
 	import { socials } from '../assets/data';
@@ -9,8 +8,8 @@
 	import Menu from './Menu.svelte';
 	import { cn } from '$lib/utils';
 
-	gsap.registerPlugin(TextPlugin);
 	onMount(() => {
+		gsap.registerPlugin(TextPlugin);
 		const splitText = new SplitType('#title');
 		gsap.fromTo(
 			'.char',
@@ -48,7 +47,7 @@
 			</div>
 			<div class="flex w-full items-center justify-between lg:mt-[10%] lg:max-w-xl">
 				<div class="mx-2 my-6 flex items-center gap-6">
-					{#each socials as { name, link, icon }}
+					{#each socials as { link, icon }}
 						<a
 							href={link}
 							target="_blank"

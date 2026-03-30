@@ -63,4 +63,8 @@
 		scroll-snap-align: start;
 		padding: 5rem 0;
 	}
+
+	#title :global(.char) {
+		opacity: 0;
+	}
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { gsap } from 'gsap';
+	import gsap from 'gsap';
 	import { MoveDown } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 

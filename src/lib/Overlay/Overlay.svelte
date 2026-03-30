@@ -3,14 +3,12 @@
 	import { browser } from '$app/environment';
 	import { cn } from '$lib/utils';
 	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import gsap from 'gsap';
+	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 	import NavLink from './NavLink.svelte';
 
 	const systemTheme = browser ? window.matchMedia('(prefers-color-scheme: dark)').matches : false;
 	let currTheme = systemTheme ? 'dark' : 'light';
-
-	gsap.registerPlugin(ScrollTrigger);
 
 	let name: HTMLAnchorElement;
 	let button: HTMLButtonElement;
@@ -29,6 +27,7 @@
 	let scrollUpFunction: () => void;
 
 	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
 		let navLinks = document.querySelectorAll('.mask');
 
 		gsap.fromTo(
