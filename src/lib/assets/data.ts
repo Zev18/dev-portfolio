@@ -1,10 +1,10 @@
-import { Github, Twitter, Linkedin, type Icon } from 'lucide-svelte';
+import { Github, Linkedin, Twitter, type Icon } from 'lucide-svelte';
 import type { ComponentType } from 'svelte';
 
 import fontrando from '$lib/assets/images/projects/font-randomizer.webp';
 import gptstatus from '$lib/assets/images/projects/GPTStatus.webp';
-import artsite from '$lib/assets/images/projects/Zevsart.webp';
 import shsh from '$lib/assets/images/projects/shalshelet-shivyoni.webp';
+import artsite from '$lib/assets/images/projects/Zevsart.webp';
 
 export type tech =
 	| 'react'
@@ -136,10 +136,10 @@ export const work: work[] = [
 		companyLink: 'https://prescientai.com',
 		role: 'Full-Stack Developer',
 		location: 'Miami, FL',
-		year: '2024-Present',
+		year: '2024-2026',
 		stack: ['react', 'typescript', 'ruby on rails', 'postgresql', 'graphql'],
 		summary:
-			'Accepted a return offer to come back to PrescientAI, where I am now a core member of the platform engineering team.'
+			'Optimized the entire frontend codebase to result in 3x faster ci workflow. Led several projects in a rapidly growing product, including authentication, Slack integration, and GraphQL. During my time, PrescientAI saw rapid growth, and more than doubled in valuation.'
 	},
 	{
 		company: 'PrescientAI',
