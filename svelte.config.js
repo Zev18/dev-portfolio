@@ -8,7 +8,7 @@ const config = {
 	preprocess: vitePreprocess(),
 	vite: {
 		ssr: {
-			noExternal: [/^@smui(?:-extra)?\//]
+			noExternal: [/^@smui(?:-extra)?\//, 'gsap']
 		}
 	},
 	kit: {
